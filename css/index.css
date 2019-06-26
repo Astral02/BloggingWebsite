@@ -8,7 +8,36 @@ body{
    background-size: 100% cover!important;
    overflow:hidden;
    display: block;
-} 
+}
 
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
-                                 
+
+/* 'All Post' and 'Create Post' buttons styling - start*/
+
+.postButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height:8%;
+}
+
+
+.postButtonsCentre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:6px;
+    border-right: none;
+    border-bottom: none;
+    border-color: white;
+    background-color: orange;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size:14px;
+}
+
+/* 'All Post' and 'Create Post' buttons styling - end*/
+                                
