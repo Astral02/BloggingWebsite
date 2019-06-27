@@ -7,7 +7,6 @@ signInModalFunction();
 signUpModalFunction();
 createPostModalFunction();
 
-
 //'Sign In' modal
 function signInModalFunction() {
   var sImodal = document.getElementById("signInModal");
@@ -45,8 +44,6 @@ function signUpModalFunction() {
     }
   }
 }
-
-
 
 //'Create post' modal
 function createPostModalFunction(){
