@@ -17,6 +17,14 @@ function enableEditableText() {
         getBlogContent +
         '</textarea></div><br>'
     getBlogContentEle.innerHTML = inputElement;
+    //blog title    
+    var blogTitle = document.getElementById('blogTitleNew');
+    var blogTitleContent = blogTitle.innerText;
+
+    var inputTitleElement = '<div><br><textarea class="txtBlog" id="txtEditedBlogTitle"  rows="1" style="width:40%">' +
+        blogTitleContent +
+        '</textarea></div>'
+    blogTitle.innerHTML = inputTitleElement;
 }
 function updateEditedBlog() {
     //blog body
@@ -24,6 +32,12 @@ function updateEditedBlog() {
     var textEdited = (editedBlog.value).toString();
     var getDiv = document.getElementById('blogBody');
     getDiv.innerText = textEdited;
+    //blog title
+    var editBlogTitle = document.getElementById('txtEditedBlogTitle');
+    var titleTextEdited = (editBlogTitle.value).toString();
+    var getTitleDiv = document.getElementById('blogTitleNew');
+    getTitleDiv.innerText = titleTextEdited;
+
 }
 var likes = 1;
 function toggleLike() {
