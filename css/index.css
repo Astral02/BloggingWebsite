@@ -65,6 +65,34 @@ body{
     font-size:14px;
 }
 
+/* Set a style for the rest of the elements besides the header elements on the index.html page */
+.heading{
+	font-size: 300%;
+    font-family: 'satisfy', sans-serif;
+    color: rgb(0,0,190);
+	padding: 10px;
+	padding-bottom: 0px;
+}
+.subhead{
+	font-size: 100%;
+    font-family: 'Marck Script', sans-serif;   
+	padding: 10px;
+	padding-top: 0px;
+}
+
+/* Full-width inputs */
+input:required{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 0px solid #ccc;
+  box-sizing: border-box;
+  background-color: rgb(229,239,223);
+
+}
+
+
 /* 'All Post' and 'Create Post' buttons styling - end*/
 
 /* 'Create Post' Modal - Start*/
@@ -74,6 +102,7 @@ body{
   z-index: 1;
   left: 0;
   top: 0;
+  font-family:Abel;
   width: 100%;
   height: 100%;
   background-color: rgb(0,0,0);
@@ -132,7 +161,6 @@ body{
   font-family:serif;
 }
 
-
 form, .textArea{
   padding: 0px 15px 20px 15px;
 }
@@ -187,3 +215,63 @@ form, .textArea{
 }
 
 /* 'Create Post' Modal Content - End*/
+.signup-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+.signin-modal-content {
+  background-color: #fefefe;
+	font-family:Abel;
+	position:relative;
+	top:10%;
+	padding:20px;
+  margin: auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+}
+
+.signup-container {
+  padding: 16px;
+}
+
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0; 
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.signup {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+h1{
+	text-align: center;
+}
+
