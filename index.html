@@ -1,133 +1,118 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-    <!-- Place all CSS for header in this file -->
-    <link href='css\header.css' rel='stylesheet' type='text/css'>
+  <!-- Place all CSS for header in this file -->
+  <link href='css\header.css' rel='stylesheet' type='text/css'>
 
-    <!-- Place all CSS for the rest of the elements in this file -->
-    <link href='css\index.css' rel='stylesheet' type='text/css'>
+  <!-- Place all CSS for the rest of the elements in this file -->
+  <link href='css\index.css' rel='stylesheet' type='text/css'>
 
-	<!-- Place all CSS for fonts in this file -->
-    <link href='css\font.css' rel='stylesheet' type='text/css'>
+  <!-- Place all CSS for fonts in this file -->
+  <link href='css\font.css' rel='stylesheet' type='text/css'>
 
 </head>
+
 <body>
-    <div id="main-container-div">
+  <div id="main-container-div">
 
-        <div class="header">
+    <div class="header">
 
-        	<!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
-          <span class = "heading">ScriBBler</span>
-          <button id="signUpButton">Sign Up</button>
-          <button id="signInButton">Sign In</button>
-          
-          <div class = "subhead">Explore. Imagine. Create</div>
-        </div>
+      <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+      <span class="heading">ScriBBler</span>
+      <button id="signUpButton">Sign Up</button>
+      <button id="signInButton">Sign In</button>
 
-        <div class="postButtons">
-
-        	<!-- Insert code for All Posts & Create Post button here -->
-
-          <!--All posts Button -->
-          <button class="postButtonsCentre" onclick="openBlogList()" > All Posts</button>
-          <!--Create posts Button -->
-          <button class="postButtonsCentre" id="createPostButton">Create Posts</button>
-
-        </div>
+      <div class="subhead">Explore. Imagine. Create</div>
     </div>
 
-    <div>
+    <div class="postButtons">
 
-    	<!-- Insert code for Sign In modal here -->
+      <!-- Insert code for All Posts & Create Post button here -->
 
-      <div id="signInModal" class="Modal">
-        <div class="signInModalContent">
-
-          <span class="ModalClose">&times;</span> <!-- Cross button for closing the modal -->
-          <h1 class = "ModalTitle1"> Welcome Back! </h1>
-
-          <hr>
-          <form>
-          <h2><label class="labelText">Username:</label></h3>
-          <input type="text"  class="inputBox" placeholder="Enter Username" required>
-          <h2><label class="labelText">Password:</label></h3>
-          <input type="password"  class="inputBox" placeholder="Enter Password" required>
-          </form>
-          <div class="container" id="submit">
-          <button id="submitButton">Sign In</button>
-          </div>
-          <!--Please link 'sign up' modal here -->
-          <h4> Not a member? &nbsp;<a href="#" id='signUpHyperlink' onclick="showSignUpModal()">Sign Up</a></h4>
-        </div>
-     </div>
+      <!--All posts Button -->
+      <button class="postButtonsCentre" onclick="openBlogList()"> All Posts</button>
+      <!--Create posts Button -->
+      <button class="postButtonsCentre" id="createPostButton">Create Posts</button>
 
     </div>
+  </div>
 
-    <div id="signUpModal" class="signup-modal">
-        <!-- Insert code for Sign Up modal here -->
-              
-            <form class="signin-modal-content" action="">
-            <span class="close" title="Close Modal">&times;</span>
-            <h1>Get Started</h1>
-            <div class="sigup-container">
-             
-              <hr>
-                <label for="uname"><b>Full name</b></label>
-                  <input type="text" placeholder="Enter Full name" name="uname" required>
-              <label for="uname"><b>Username</b></label>
-                  <input type="text" placeholder="Enter Username" name="uname" required>
-      
-      
-      
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
-      
-              <label for="psw-repeat"><b>Repeat Password</b></label>
-              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-      
-              <div class="clearfix">
-              
-              <button type="submit" class="signup">Sign Up</button>
-              </div>
-            </div>
-            </form>
-          </div>
-
-    <div>
-
-    	<!-- Insert code for Create Post modal here -->
-
-      <div id="createPostModal" class="Modal">
-        <div class="postModalContent">
-
-          <span class="ModalClose">&times;</span> <!-- Cross button for closing the modal -->
-            <h1 class = "ModalTitle">Pen Your Post</h1>
-
-            <form>
-            <h3><label class="labelText">Title:</label></h3>
-            <input type="text"  id="titleBox">
-            </form>
-
-            <div class="textArea">
-            <h3><label class="labelText">Content:</label></h3>
-            <textarea id="contentBox"></textarea>
-            </div>
-
-            <div class="container">
-            <button id="createButton">Create</button>
-            </div>
-
-
+  <div id="signInModal" class="modal">
+    <form class="modal-content" action="">
+      <span class="ModalClose" title="Close Modal">&times;</span>
+      <h1>Welcome Back!</h1>
+      <div class="modal-container">
+        <hr>
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <div class="clearfix">
+          <button type="submit" class="signup">Sign In</button>
         </div>
-     </div>
+        <h4> Not a member? &nbsp;<a href="#" id='signUpHyperlink' onclick="showSignUpModal()">Sign Up</a></h4>
+      </div>
+    </form>
+  </div>
 
+  <div id="signUpModal" class="modal">
+    <form class="modal-content" action="">
+      <span class="close" title="Close Modal">&times;</span>
+      <h1>Get Started</h1>
+      <div class="modal-container">
+        <hr>
+        <label for="fullName"><b>Full name</b></label>
+        <input type="text" placeholder="Enter Full name" name="fullName" required>
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+        <div class="clearfix">
+          <button type="submit" class="signup">Sign Up</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div>
+
+    <!-- Insert code for Create Post modal here -->
+
+    <div id="createPostModal" class="Modal">
+      <div class="postModalContent">
+
+        <span class="ModalClose">&times;</span> <!-- Cross button for closing the modal -->
+        <h1 class="ModalTitle">Pen Your Post</h1>
+
+        <form>
+          <h3><label class="labelText">Title:</label></h3>
+          <input type="text" id="titleBox">
+        </form>
+
+        <div class="textArea">
+          <h3><label class="labelText">Content:</label></h3>
+          <textarea cols="50" rows="15" id="contentBox"></textarea>
+        </div>
+
+        <div class="container">
+          <button id="createButton">Create</button>
+        </div>
+
+
+      </div>
     </div>
 
-	<!-- Place all Javascript for header in this file -->
-	<script src="js\header.js"></script>
-	<!-- Place all Javascript for rest of the elements in this file -->
-    <script src="js\index.js"></script>
+  </div>
+
+  <!-- Place all Javascript for header in this file -->
+  <script src="js\header.js"></script>
+  <!-- Place all Javascript for rest of the elements in this file -->
+  <script src="js\index.js"></script>
 
 </body>
+
 </html>

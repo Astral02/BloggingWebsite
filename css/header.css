@@ -174,7 +174,7 @@ input:required{
   }
   
   /* 'Create Post' Modal Content - End*/
-  .signup-modal {
+  .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -188,7 +188,7 @@ input:required{
     padding-top: 60px;
   }
   
-  .signin-modal-content {
+  .modal-content {
     background-color: #fefefe;
       font-family:Abel;
       position:relative;
@@ -228,4 +228,8 @@ input:required{
     border: none;
     cursor: pointer;
     width: 100%;
+  }
+
+  button:hover {
+    cursor: pointer;
   }
