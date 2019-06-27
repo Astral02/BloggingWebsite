@@ -20,36 +20,32 @@
         <div class="subhead">Explore. Imagine. Create</div>
     </div>
 
-    <div id="signInModal" class="Modal">
-        <div class="signInModalContent">
-            <span class="ModalClose">&times;</span> <!-- Cross button for closing the modal -->
-            <h1 class="ModalTitle1"> Welcome Back! </h1>
-            <hr>
-            <form>
-                <h2><label class="labelText" for="uname">Username:</label></h3>
-                    <input type="text" class="inputBox" placeholder="Enter Username" name="uname" required>
-                    <h2><label class="labelText" for="password">Password:</label></h3>
-                        <input type="password" class="inputBox" placeholder="Enter Password" name= required>
-            </form>
-            <div class="container" id="submit">
-                <button id="submitButton">Sign In</button>
+    <div id="signInModal" class="modal">
+        <form class="modal-content" action="">
+            <span class="ModalClose" title="Close Modal">&times;</span>
+            <h1>Welcome Back!</h1>
+            <div class="modal-container">
+                <hr>
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <div class="clearfix">
+                    <button type="submit" class="signup">Sign In</button>
+                </div>
+                <h4> Not a member? &nbsp;<a href="#" id='signUpHyperlink' onclick="showSignUpModal()">Sign Up</a></h4>
             </div>
-            <!--Please link 'sign up' modal here -->
-            <h4> Not a member? &nbsp;<a href="#" id='signUpHyperlink' onclick="showSignUpModal()">Sign Up</a></h4>
-        </div>
-        </dv>
+        </form>
     </div>
 
-    <div id="signUpModal" class="signup-modal">
-        <!-- Insert code for Sign Up modal here -->
-
-        <form class="signin-modal-content" action="">
+    <div id="signUpModal" class="modal">
+        <form class="modal-content" action="">
             <span class="close" title="Close Modal">&times;</span>
             <h1>Get Started</h1>
-            <div class="sigup-container">
+            <div class="modal-container">
                 <hr>
-                <label for="fullname"><b>Full name</b></label>
-                <input type="text" placeholder="Enter Full name" name="fullname" required>
+                <label for="fullName"><b>Full name</b></label>
+                <input type="text" placeholder="Enter Full name" name="fullName" required>
                 <label for="uname"><b>Username</b></label>
                 <input type="text" placeholder="Enter Username" name="uname" required>
                 <label for="psw"><b>Password</b></label>
@@ -75,7 +71,7 @@
             <p>Jimi</p>
         </div>
 
-        <div class="blogText" >
+        <div class="blogText">
             <p id="blogBody">
                 Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded
                 the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His
