@@ -13,19 +13,23 @@ function enableEditableText() {
     //blog body
     var getBlogContentEle = document.getElementById('blogBody');
     var getBlogContent = getBlogContentEle.innerText;
-    var inputElement = '<div><br><textarea class="txtBlog" id="txtEditedBlog" rows="15" style="width:99.5%">' +
+    var inputElement = '<div><textarea class="blogText blogContent" id="txtEditedBlog" rows="15" style="width:99.5%">' +
         getBlogContent +
-        '</textarea></div><br>'
-    getBlogContentEle.innerHTML = inputElement;
+        '</textarea></div>'
+    getBlogContentEle.innerHTML = inputElement;	
+	
     //blog title    
     var blogTitle = document.getElementById('blogTitleNew');
     var blogTitleContent = blogTitle.innerText;
-
-    var inputTitleElement = '<div><br><textarea class="txtBlog" id="txtEditedBlogTitle"  rows="1" style="width:40%">' +
+    var inputTitleElement = '<div><textarea class="blogTite" id="txtEditedBlogTitle"  rows="1" style="width:40%">' +
         blogTitleContent +
         '</textarea></div>'
+		blogTitle.focus();
     blogTitle.innerHTML = inputTitleElement;
-}
+	var blogTitleTextArea = document.getElementById('txtEditedBlogTitle');
+	blogTitleTextArea.focus();
+	
+	}
 function updateEditedBlog() {
     //blog body
     var editedBlog = document.getElementById('txtEditedBlog');
